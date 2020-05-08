@@ -65,7 +65,7 @@ body{
   overflow: hidden;
 }
 
-.image::after {
+.wrapper-image::after {
   position: absolute;
   content: '';
   right: 0;
