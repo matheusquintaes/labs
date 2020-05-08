@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore New Zealand</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body  onload="init()">
+  <section class="paralax">
+    <img src="assets/bg3.jpg" id="bg" />
+    <img src="assets/mountain3.png" id="mountain" />
+    <img src="assets/road3.png" id="road" />
+    <div id="text"></span> <h1>New Zealand</h1>  <span>Start your journey </h1>
+  </section>
+
+  <section class="content">
+
+    <div class="wrapper">
+      <div class="item">
+        <img src="assets/milford.jpg"/>
+        <h3>Bask in Milford Sound's scale</h3>
+        <p>Take a walking holiday! Hiking in New Zealand is the best way to immerse yourself in iconic natural beauty. Find great walks and diverse New Zealand trails.</p>
+      </div>
+      <div class="item">
+        <img src="assets/hobitton.jpg"/>
+        <h3>Make furry-footed friends</h3>
+        <p>Ever since the first The Lord of the Rings movie was released in 2001, New Zealand has been known as the home of Middle‑earth™. Take a guided tour of the Hobbiton Movie Set in Matamata, land of The Shire's lush pastures. See more Hamilton experiences.</p>
+      </div>
+    </div>
+
+  </section>  
+  <script>
+    const bg = document.getElementById('bg');
+    const mountain = document.getElementById('mountain');
+    const road = document.getElementById('road');
+    const text = document.getElementById('text');
+
+    window.addEventListener('scroll', function (){
+      let value = window.scrollY;
+
+      bg.style.top = value * 0.55 + 'px';
+      mountain.style.top = -value * 0.08 + 'px';
+      road.style.top = value * 0.10 + 'px';
+      text.style.top = value * 0.5 + 'px';
+      
+    })
+
+
+  </script>
+
+
+</body>
+</html>

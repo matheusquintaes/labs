@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800;900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+ 
+}
+
+body{
+  min-height: 1500px;
+  background: #060606;
+}
+
+section.paralax {
+  position: relative;
+  width: 100%;
+  height: 1364px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.paralax:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(to top, #060606, transparent);
+  z-index: 10;
+}
+
+section.paralax img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+
+#text{
+  position: relative;
+  color: #fff;
+  margin-top: -5%;
+  text-align: center;
+}
+#text  h1 {
+  font-size: 108px;
+  font-weight: 700;
+  z-index: 1;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.61);
+  margin: 30px;
+}
+#text span {
+  font-size: 24px;
+  letter-spacing: 0px;
+  font-weight: 500;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.61);
+
+}
+
+#road {
+  z-index: 2;
+}
+
+section.content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  margin: 120px 0;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item{
+  flex-basis: 35%;
+}
+
+.item h3{
+  margin: 40px 0 20px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.item p{
+  line-height: 27px;
+  font-size: 14px;
+  color: #c8c7cc;
+}
